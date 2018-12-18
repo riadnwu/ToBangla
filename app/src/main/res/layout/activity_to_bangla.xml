@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/relative_bordar"
+    android:gravity="center"
+    tools:context="com.example.riadul.tobangla.ToBangla">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@drawable/liniar_layout_border"
+        tools:layout_editor_absoluteY="8dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="সংখ্যাঃ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <EditText
+            android:id="@+id/inputNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextStyle"
+            android:hint="সংখ্যা"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bordar"
+            android:selectAllOnFocus="false" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="কথায় সংখ্যাঃ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/outputNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <Button
+                    android:id="@+id/copyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_bordar"
+                    android:text="Copy Bangla Number" />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number Words:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                 />
+                <TextView
+                    android:id="@+id/outputNumberEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                <Button
+                    android:id="@+id/copyButtonEnglish"
+                    style="@style/ButtonStyle"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_bordar"
+                    android:text="Copy English Number" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
